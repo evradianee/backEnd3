@@ -8,7 +8,7 @@
     ],
     "routes":[
         {
-            "src": "/api/ReturnEmploye/(.*)",
+            "src" : "/(.*)",
             "methods": ["OPTIONS", "DELETE", "GET", "PATCH", "POST", "PUT"],
             "headers": {
                 "Access-Control-Allow-Origin": "https://front-end6.vercel.app",
