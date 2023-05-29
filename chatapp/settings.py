@@ -166,10 +166,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ORIGIN_ALLOW_ALL = True
 
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOWED_HEADERS = ['Authorization', 'Content-Type']
-
-
 CORS_ALLOWED_ORIGIN_REGEXES = [
 r"^https://\w+\.domain\.com$",
 ]
