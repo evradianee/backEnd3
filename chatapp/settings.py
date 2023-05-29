@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'chatapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME'),
-        'USER': os.getenv('DB_USER'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'NAME': 'bnyjhsn6ny7cbmie8ec3',  # Replace with your actual database name
+        'USER': 'ul66imqivhjwijwd',  # Replace with your actual database user
+        'PASSWORD': 'zgyTSbgZoDPO22ORFG23',  # Replace with your actual database password
+        'HOST': 'bnyjhsn6ny7cbmie8ec3-mysql.services.clever-cloud.com',  # Replace with your actual database host
+        'PORT': '3306',
     }
 }
 
