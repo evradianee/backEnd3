@@ -118,6 +118,7 @@ CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ALLOWED_ORIGINS = [
     "https://front-end6.vercel.app",
+    "https://front-end6-inw12ijg6-evradianee-s-team.vercel.app/"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
