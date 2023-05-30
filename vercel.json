@@ -1,28 +1,21 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "chatapp/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-      },
-      {
-        "src": "build_files.sh",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "staticfiles_build"
+    "builds":[
+        {
+            "src" :"chatapp/wsgi.py",
+            "use" : "@vercel/python",
+            "config" : {"maxLambdaSize" : "15mb" , "runtime":"python3.9"}
         }
-      }
     ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "chatapp/wsgi.py"
-      }
+    "routes":[
+        {
+            "src" : "/(.*)",
+            "methods": ["OPTIONS", "DELETE", "GET", "PATCH", "POST", "PUT"],
+            "headers": {
+                "Access-Control-Allow-Origin": "https://front-end6.vercel.app",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization",
+                "Access-Control-Allow-Methods": "OPTIONS, DELETE, GET, PATCH, POST, PUT"
+            },
+            "dest" : "chatapp/wsgi.py"
+        }
     ]
-  }
-  
+}
