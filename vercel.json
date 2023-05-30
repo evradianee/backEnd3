@@ -1,21 +1,13 @@
 {
-    "builds":[
+    "builds": [{
+        "src": "chatapp/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
         {
-            "src" :"chatapp/wsgi.py",
-            "use" : "@vercel/python",
-            "config" : {"maxLambdaSize" : "15mb" , "runtime":"python3.9"}
-        }
-    ],
-    "routes":[
-        {
-            "src" : "/(.*)",
-            "methods": ["OPTIONS", "DELETE", "GET", "PATCH", "POST", "PUT"],
-            "headers": {
-                "Access-Control-Allow-Origin": "https://front-end6.vercel.app",
-                "Access-Control-Allow-Headers": "Content-Type, Authorization",
-                "Access-Control-Allow-Methods": "OPTIONS, DELETE, GET, PATCH, POST, PUT"
-            },
-            "dest" : "chatapp/wsgi.py"
+            "src": "/(.*)",
+            "dest": "chatapp/wsgi.py"
         }
     ]
 }
