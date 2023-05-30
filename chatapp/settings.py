@@ -157,7 +157,7 @@ REST_FRAMEWORK= {
 MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-SITE_URL = 'http://localhost:3000/payment'
+SITE_URL = 'https://front-end6.vercel.app/payment'
 
 STRIPE_SECRET_KEY = 'sk_test_51MJo2GBgV24EY7qtMoRKKihfsZCzuT8JCKEt2pQEU8BznfUCHYFelffEPr6oxKrDdWnKr996Uutu15t727at57Bf00gs4kUFMW'
 
