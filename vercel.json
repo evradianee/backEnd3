@@ -1,7 +1,7 @@
 {
     "builds":[
         {
-            "src" :"chatapp/wsgi.py",
+            "src" :"api/wsgi.py",
             "use" : "@vercel/python",
             "config" : {"maxLambdaSize" : "15mb" , "runtime":"python3.9"}
         }
@@ -15,7 +15,7 @@
                 "Access-Control-Allow-Headers": "Content-Type, Authorization",
                 "Access-Control-Allow-Methods": "OPTIONS, DELETE, GET, PATCH, POST, PUT"
             },
-            "dest" : "chatapp/wsgi.py"
+            "dest" : "api/wsgi.py"
         }
     ]
 }
