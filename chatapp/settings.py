@@ -164,8 +164,12 @@ CORS_ALLOWED_ORIGINS = [
 "http://localhost:3000",
 'https://front-end6.vercel.app'
 ]
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = False
 
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_HEADERS = ['Authorization', 'Content-Type']
+
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 CORS_ALLOWED_ORIGIN_REGEXES = [
 r"^https://\w+\.domain\.com$",
 ]
