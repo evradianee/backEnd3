@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2z90@)(v@1122(en1s_#1nv7ph1$-lmi0!e8altd75kh)%=9i7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app','127.0.0.1']
 
 
 # Application definition
@@ -89,18 +89,27 @@ WSGI_APPLICATION = 'chatapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'bnyjhsn6ny7cbmie8ec3',  # Replace with your actual database name
+#         'USER': 'ul66imqivhjwijwd',  # Replace with your actual database user
+#         'PASSWORD': 'zgyTSbgZoDPO22ORFG23',  # Replace with your actual database password
+#         'HOST': 'bnyjhsn6ny7cbmie8ec3-mysql.services.clever-cloud.com',  # Replace with your actual database host
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bnyjhsn6ny7cbmie8ec3',  # Replace with your actual database name
-        'USER': 'ul66imqivhjwijwd',  # Replace with your actual database user
-        'PASSWORD': 'zgyTSbgZoDPO22ORFG23',  # Replace with your actual database password
-        'HOST': 'bnyjhsn6ny7cbmie8ec3-mysql.services.clever-cloud.com',  # Replace with your actual database host
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': 'db.avkoaxtzzkgppkvptmnu.supabase.co',
+        'NAME': 'postgres',
+        'PORT': '6543',
+        'USER': 'postgres',
+        'PASSWORD': '1234evra@1234$',
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
