@@ -100,14 +100,24 @@ WSGI_APPLICATION = 'chatapp.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'HOST': 'db.avkoaxtzzkgppkvptmnu.supabase.co',
+#         'NAME': 'postgres',
+#         'PORT': '6543',
+#         'USER': 'postgres',
+#         'PASSWORD': '1234evra@1234$',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'HOST': 'db.avkoaxtzzkgppkvptmnu.supabase.co',
-        'NAME': 'postgres',
-        'PORT': '6543',
-        'USER': 'postgres',
-        'PASSWORD': '1234evra@1234$',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'chatapp3',
+        'USER':'root',
+        'PASSWORD':'',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
     }
 }
 # Password validation
