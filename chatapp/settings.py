@@ -113,11 +113,11 @@ WSGI_APPLICATION = 'chatapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chatapp3',
-        'USER':'root',
-        'PASSWORD':'',
-        'HOST':'127.0.0.1',
-        'PORT':'3306',
+        'NAME': 'evradianee$chatapp3',
+        'USER': 'evradianee',
+        'PASSWORD': 'passdatabase',
+        'HOST': 'evradianee.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 # Password validation
